@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="04bad07f-9123-4e58-a115-5a816992615b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/docker" />
+  </component>
+  <component name="ProjectId" id="1bkaR5PPjTRA7jLbEJvWXCwn5wB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/rabbitmq/docker-compose.yml" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\docker" />
+      <recent name="D:\docker\kibana7.6.2" />
+      <recent name="D:\docker\logstash7.6.2\config.d" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\docker" />
+      <recent name="D:\docker\kibana" />
+      <recent name="D:\docker\mysql5.7" />
+      <recent name="D:\docker\elasticsearch7.6.2" />
+      <recent name="D:\docker\logstash7.6.2" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Docker.docker-compose.yml.redis: Compose Deployment">
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="" />
+          <option name="buildCliOptions" value="" />
+          <option name="buildOnly" value="true" />
+          <option name="command" value="" />
+          <option name="containerName" value="" />
+          <option name="entrypoint" value="" />
+          <option name="commandLineOptions" value="" />
+          <option name="sourceFilePath" value="redis6.0.1/dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.redis: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="redis" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.redis: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="04bad07f-9123-4e58-a115-5a816992615b" name="Default Changelist" comment="" />
+      <created>1589178533404</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589178533404</updated>
+      <workItem from="1589178534746" duration="9354000" />
+      <workItem from="1589198108680" duration="8053000" />
+      <workItem from="1589266064795" duration="6461000" />
+      <workItem from="1589272613860" duration="3018000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="117" key="#Docker" timestamp="1589181598161">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="117" key="#Docker/0.0.1920.1040@0.0.1920.1040" timestamp="1589181598161" />
+    <state x="651" y="143" key="#Docker_Image" timestamp="1589182987803">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="651" y="143" key="#Docker_Image/0.0.1920.1040@0.0.1920.1040" timestamp="1589182987803" />
+    <state x="811" y="421" key="#Volume_binding" timestamp="1589274908989">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="811" y="421" key="#Volume_binding/0.0.1920.1040@0.0.1920.1040" timestamp="1589274908989" />
+    <state x="398" y="165" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589274042242">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="398" y="165" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589274042242" />
+    <state x="705" y="316" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589183610678">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="705" y="316" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1589183610678" />
+    <state x="651" y="224" key="#docker-compose.yml.rabbitmq:_Compose_Deployment" timestamp="1589272203391">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="651" y="224" key="#docker-compose.yml.rabbitmq:_Compose_Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1589272203391" />
+    <state x="651" y="58" key="#elasticsearch" timestamp="1589209584438">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="651" y="58" key="#elasticsearch/0.0.1920.1040@0.0.1920.1040" timestamp="1589209584438" />
+    <state x="651" y="58" width="843" height="923" key="#kibana" timestamp="1589209783898">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="651" y="58" width="843" height="923" key="#kibana/0.0.1920.1040@0.0.1920.1040" timestamp="1589209783898" />
+    <state x="651" y="58" key="#mysql" timestamp="1589205434750">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="651" y="58" key="#mysql/0.0.1920.1040@0.0.1920.1040" timestamp="1589205434750" />
+    <state x="651" y="224" key="#rabbitmq-compose" timestamp="1589270006176">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="651" y="224" key="#rabbitmq-compose/0.0.1920.1040@0.0.1920.1040" timestamp="1589270006176" />
+    <state x="651" y="58" key="#redis" timestamp="1589206107135">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="651" y="58" key="#redis/0.0.1920.1040@0.0.1920.1040" timestamp="1589206107135" />
+    <state x="651" y="58" key="#redis:6.0.1" timestamp="1589183548681">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="651" y="58" key="#redis:6.0.1/0.0.1920.1040@0.0.1920.1040" timestamp="1589183548681" />
+    <state x="782" y="378" key="DockerComposeFileDialog" timestamp="1589271329362">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="782" y="378" key="DockerComposeFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589271329362" />
+    <state x="799" y="168" width="876" height="684" key="EnvironmentVariablesDialog" timestamp="1589268843558">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="799" y="168" width="876" height="684" key="EnvironmentVariablesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589268843558" />
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1589274906965">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589274906965" />
+    <state width="1293" height="275" key="GridCell.Tab.0.bottom" timestamp="1589209628157">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589209628157" />
+    <state width="1293" height="275" key="GridCell.Tab.0.center" timestamp="1589209628157">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589209628157" />
+    <state width="1293" height="275" key="GridCell.Tab.0.left" timestamp="1589209628157">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589209628157" />
+    <state width="1293" height="275" key="GridCell.Tab.0.right" timestamp="1589209628157">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589209628157" />
+    <state x="461" y="164" width="1382" height="711" key="SettingsEditor" timestamp="1589275662153">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" width="1382" height="711" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589275662153" />
+    <state x="859" y="410" width="682" height="219" key="com.intellij.docker.deployment.ui.DockerPortBindingsField.v173.dialogSize" timestamp="1589267829503">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="859" y="410" width="682" height="219" key="com.intellij.docker.deployment.ui.DockerPortBindingsField.v173.dialogSize/0.0.1920.1040@0.0.1920.1040" timestamp="1589267829503" />
+    <state x="858" y="410" width="857" height="219" key="com.intellij.docker.deployment.ui.DockerVolumeBindingsField.v173.dialogSize" timestamp="1589267837967">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="858" y="410" width="857" height="219" key="com.intellij.docker.deployment.ui.DockerVolumeBindingsField.v173.dialogSize/0.0.1920.1040@0.0.1920.1040" timestamp="1589267837967" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1589272155547">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589272155547" />
+  </component>
+</project>

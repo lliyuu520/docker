@@ -1,0 +1,37 @@
+version: "3.7"
+services:
+  rabbitmq:
+    container_name: rabbitmq
+    build: rabbitmq
+    hostname: rabbitmq_hostname
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - network
+    volumes:
+      - volume_liliangyu:/var/lib/rabbitmq
+  mysql:
+    container_name: mysql
+    build: mysql
+    ports:
+    - "3306:3306"
+    networks:
+      - network
+    volumes:
+      - volume_liliangyu:/var/lib/mysql
+  redis:
+    container_name: redis
+    build: redis
+    ports:
+      - "6379:6379"
+    networks:
+      - network
+    volumes:
+    - volume_liliangyu:/data
+networks:
+  network:
+    driver: bridge
+volumes:
+  volume_liliangyu:
+
