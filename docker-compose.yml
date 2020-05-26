@@ -3,35 +3,131 @@ services:
   rabbitmq:
     container_name: rabbitmq
     build: rabbitmq
-    hostname: rabbitmq_hostname
+    hostname: rabbitmq
+    restart: always
+    privileged: true
     ports:
       - "5672:5672"
       - "15672:15672"
     networks:
       - network
     volumes:
-      - volume_liliangyu:/var/lib/rabbitmq
+      - rabbitmq_data:/var/lib/rabbitmq
   mysql:
     container_name: mysql
     build: mysql
+    hostname: mysql
+    restart: always
+    privileged: true
     ports:
     - "3306:3306"
     networks:
       - network
     volumes:
-      - volume_liliangyu:/var/lib/mysql
+      - mysql_data:/var/lib/mysql/
+  mongo:
+    container_name: mongo
+    build: mongo
+    hostname: mongo
+    restart: always
+    privileged: true
+    ports:
+      - "27017:27017"
+    networks:
+      - network
+    volumes:
+      - mongo_configdb:/data/configdb
+      - mongo_db:/data/db
   redis:
     container_name: redis
     build: redis
+    hostname: redis
+    restart: always
+    privileged: true
     ports:
       - "6379:6379"
     networks:
       - network
     volumes:
-    - volume_liliangyu:/data
+      - redis_data:/var/lib/data/
+  yapi:
+    container_name: yapi
+    build: yapi
+    hostname: yapi
+    restart: always
+    privileged: true
+    ports:
+      - "3000:3000"
+    networks:
+      - network
+    volumes:
+      - yapi_data:/yapi
+  zipkin:
+    container_name: zipkin
+    build: zipkin
+    hostname: zipkin
+    restart: always
+    privileged: true
+    ports:
+      - "9411:9411"
+    networks:
+      - network
+  zipkin-dependencies:
+    container_name: zipkin-dependencies
+    build: zipkin-dependencies
+    hostname: zipkin-dependencies
+    restart: always
+    privileged: true
+    networks:
+      - network
+  elasticsearch:
+    container_name: elasticsearch
+    build: elasticsearch
+    hostname: elasticsearch
+    restart: always
+    privileged: true
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    networks:
+      - network
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data/
+  kibana:
+    container_name: kibana
+    build: kibana
+    hostname: kibana
+    restart: always
+    privileged: true
+    ports:
+      - "5601:5601"
+    networks:
+      - network
+    volumes:
+      - kibana_data:/usr/share/kibana/data/
+  logstash:
+    container_name: logstash
+    build: logstash
+    hostname: logstash
+    restart: always
+    privileged: true
+    networks:
+      - network
+    volumes:
+      - logstash_data:/usr/share/logstash/data/
 networks:
   network:
     driver: bridge
+    name: network
 volumes:
-  volume_liliangyu:
+  rabbitmq_data: {}
+  mysql_data: {}
+  mongo_configdb: {}
+  mongo_db: {}
+  redis_data: {}
+  elasticsearch_data: {}
+  kibana_data: {}
+  yapi_data: {}
+  logstash_data: {}
+
 

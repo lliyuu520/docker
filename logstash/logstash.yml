@@ -25,7 +25,7 @@
 # Which directory should be used by logstash and its plugins
 # for any persistent needs. Defaults to LOGSTASH_HOME/data
 #
-# path.data:
+ path.data: /usr/share/logstash/data/
 #
 # ------------ Pipeline Settings --------------
 #
@@ -61,7 +61,6 @@
 #
 # Where to fetch the pipeline configuration for the main pipeline
 #
-path.config: /etc/logstash/conf.d/*.conf
 #
 # Pipeline configuration string for the main pipeline
 #
@@ -88,7 +87,7 @@ path.config: /etc/logstash/conf.d/*.conf
 # When enabled, process escaped characters such as \n and \" in strings in the
 # pipeline configuration files.
 #
-# config.support_escapes: false
+config.support_escapes: false
 #
 # ------------ Module Settings ---------------
 # Define modules here.  Modules definitions must be defined as an array.
@@ -187,7 +186,7 @@ path.config: /etc/logstash/conf.d/*.conf
 #
 # Bind address for the metrics REST endpoint
 #
- http.host: "192.168.0.134"
+ http.host: "logstash"
 #
 # Bind port for the metrics REST endpoint, this option also accept a range
 # (9600-9700) and logstash will pick up the first available ports.
@@ -204,7 +203,7 @@ path.config: /etc/logstash/conf.d/*.conf
 #   * debug
 #   * trace
 #
-# log.level: info
+#log.level: warn
 # path.logs:
 #
 # ------------ Other Settings --------------

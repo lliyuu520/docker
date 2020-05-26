@@ -1,0 +1,4 @@
+FROM  gitlab/gitlab-ce:latest
+EXPOSE 80 443 22
+#CMD [ "kibana" ]
+
