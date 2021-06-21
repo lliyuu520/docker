@@ -1,6 +1,0 @@
-
-cluster.name: elasticsearch
-network.host: elasticsearch
-# 配置跨域
-http.cors.enabled: true
-http.cors.allow-origin: "*"

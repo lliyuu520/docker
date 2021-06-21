@@ -1,6 +1,6 @@
-FROM mysql:5.7
+FROM mysql:8.0
 COPY ./mysqld.cnf /etc/mysql/mysqld.cnf
-ENV MYSQL_ROOT_PASSWORD root
+ENV MYSQL_ROOT_PASSWORD Mysql@200722
 ENV TZ Asia/Shanghai
 EXPOSE 3306
 CMD [ "mysqld" ]
