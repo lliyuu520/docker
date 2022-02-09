@@ -13,42 +13,6 @@ services:
       - network
     volumes:
       - rabbitmq_data:/var/lib/rabbitmq
-  jrebel:
-    container_name: jrebel
-    build: jrebel
-    hostname: jrebel
-    restart: always
-    privileged: true
-    ports:
-      - "8081:8081"
-    networks:
-      - network
-  mysql:
-    container_name: mysql
-    build: mysql
-    hostname: mysql
-    restart: always
-    privileged: true
-    command: --default-authentication-plugin=mysql_native_password
-    ports:
-    - "3306:3306"
-    networks:
-      - network
-    volumes:
-      - mysql_data:/var/lib/mysql/
-  mongo:
-    container_name: mongo
-    build: mongo
-    hostname: mongo
-    restart: always
-    privileged: true
-    ports:
-      - "27017:27017"
-    networks:
-      - network
-    volumes:
-      - mongo_configdb:/data/configdb
-      - mongo_db:/data/db
   redis:
     container_name: redis
     build: redis
@@ -61,15 +25,27 @@ services:
       - network
     volumes:
       - redis_data:/var/lib/data/
+  nacos:
+    image: nacos/nacos-server:2.0.2
+    container_name: nacos
+    hostname: nacos
+    env_file:
+      - ./nacos/feima.env
+    volumes:
+      - ./nacos/log/:/home/nacos/logs
+    ports:
+      - "8848:8848"
+      - "9848:9848"
+      - "9555:9555"
+    restart: always
+    networks:
+      - network
 networks:
   network:
     driver: bridge
     name: network
 volumes:
   rabbitmq_data: {}
-  mysql_data: {}
-  mongo_configdb: {}
-  mongo_db: {}
   redis_data: {}
 
 
