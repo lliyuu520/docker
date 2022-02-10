@@ -29,6 +29,7 @@ services:
     image: nacos/nacos-server:2.0.2
     container_name: nacos
     hostname: nacos
+    privileged: true
     env_file:
       - ./nacos/feima.env
     volumes:
@@ -40,6 +41,18 @@ services:
     restart: always
     networks:
       - network
+  nginx:
+    image: nginx
+    container_name: nginx
+    hostname: nginx
+    restart: always
+    privileged: true
+    ports:
+      - "80:80"
+    networks:
+      - network
+    volumes:
+      - ./nginx/log/:/var/log/nginx/
 networks:
   network:
     driver: bridge
