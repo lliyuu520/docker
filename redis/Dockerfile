@@ -1,6 +1,5 @@
-FROM redis:6.0.1
-COPY ./redis.conf /etc/redis/redis.conf
+FROM redis:latest
+COPY ./module/redisbloom.so /etc/redis/module/redisbloom.so
 ENV TZ Asia/Shanghai
-EXPOSE 6379
-CMD [ "redis-server", "/etc/redis/redis.conf" ]
+CMD [ "redis-server" ,"--requirepass mypassword" ]
 
