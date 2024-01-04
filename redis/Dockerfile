@@ -1,5 +1,4 @@
-FROM redis:latest
-COPY ./module/redisbloom.so /etc/redis/module/redisbloom.so
+FROM redis
 ENV TZ Asia/Shanghai
-CMD [ "redis-server" ,"--requirepass mypassword" ]
+CMD [ "redis-server" ,"--requirepass Redis@200722" ]
 

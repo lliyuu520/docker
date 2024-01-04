@@ -1,4 +1,4 @@
-FROM rabbitmq:3.7.26-management
+FROM rabbitmq
 EXPOSE 5672 15672
 ENV TZ Asia/Shanghai
 CMD [ "rabbitmq-server"]
